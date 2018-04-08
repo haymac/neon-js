@@ -130,7 +130,18 @@ class RPCClient {
         return res.result
       })
   }
-
+  
+  /**
+   * Get new NEO Wallet Address.
+   * @return {Promise<string>}
+   */
+  getNewAddress () {
+    return this.execute(Query.getNewAddress())
+      .then((res) => {
+        return res.result
+      })
+  }
+  
   /**
    * Get the current block height.
    * @return {Promise<number>}
