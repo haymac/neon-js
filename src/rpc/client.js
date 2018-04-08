@@ -130,7 +130,7 @@ class RPCClient {
         return res.result
       })
   }
-  
+
   /**
    * Get new NEO Wallet Address.
    * @return {Promise<string>}
@@ -141,7 +141,7 @@ class RPCClient {
         return res.result
       })
   }
-  
+
   /**
    * Get the current block height.
    * @return {Promise<number>}
