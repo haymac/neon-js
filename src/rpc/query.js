@@ -156,6 +156,16 @@ class Query {
       method: 'getconnectioncount'
     })
   }
+  
+  /**
+   * @return {Query}
+   */
+    static getNewAddress () {
+    return new Query({
+      method: 'getnewaddress'
+    })
+  }
+  
   /**
    * @param {string} scriptHash
    * @return {Query}
